@@ -13,7 +13,7 @@ ch.setLevel(logging.WARNING)
 
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 ch.setFormatter(formatter)
-logger.addHandler(ch)
+#logger.addHandler(ch)
 
 
 MAIN_ROLES = ['Protagonist', 'Antagonist', 'Innocent']
@@ -105,11 +105,14 @@ def check_file_format(gold_dict, pred_dict):
     return errors
 
 def exact_match_ratio(gold_labels, pred_labels):
-    """Calculate Exact Match Ratio."""
-    exact_matches = sum([gold_labels.get(key) == pred_labels.get(key) for key in gold_labels.keys()])
+    """Calculate Exact Match Ratio based only on secondary labels."""
+    exact_matches = 0
+    for key in gold_labels.keys():
+        if set(gold_labels[key][1]) == set(pred_labels[key][1]):
+            exact_matches += 1
     total = len(gold_labels)
     ratio = exact_matches / total if total > 0 else 0
-    logger.info(f"Exact Match Ratio calculated: {ratio:.4f}")
+    logger.info(f"Exact Match Ratio based on secondary labels: {ratio:.4f}")
     return ratio
 
 
@@ -196,7 +199,10 @@ if __name__ == '__main__':
         fileLogger.setFormatter(formatter)
         logger.addHandler(fileLogger)
         logger.setLevel(logging.DEBUG)
-
+    else:
+        ch.setLevel(logging.DEBUG)
+        logger.addHandler(ch)
+        
     main(args.gold_file_path, args.pred_file_path)
 
 

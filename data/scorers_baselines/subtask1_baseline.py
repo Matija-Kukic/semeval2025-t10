@@ -13,6 +13,38 @@ PROTAGONISTS = ['Guardian', 'Martyr', 'Peacemaker', 'Rebel', 'Underdog', 'Virtuo
 ANTAGONISTS = ['Instigator', 'Conspirator', 'Tyrant', 'Foreign Adversary', 'Traitor', 'Spy', 'Saboteur', 'Corrupt', 'Incompetent', 'Terrorist', 'Deceiver', 'Bigot']
 INNOCENTS = ['Forgotten', 'Exploited', 'Victim', 'Scapegoat']
 
+
+def process_tsv_file(file_path):
+    """
+    Reads a TSV file as a single string and manually processes it based on tabs and newlines.
+
+    Parameters:
+    - file_path: Path to the TSV file.
+
+    Returns:
+    - A list of rows, where each row is a list of columns.
+    """
+    try:
+        # Read the file as a single string
+        with open(file_path, mode='r', encoding='utf-8') as file:
+            file_content = file.read()
+
+        # Split content into lines
+        lines = file_content.split('\n')
+
+        # Process each line into columns based on tabs
+        rows = []
+        for line in lines:
+            if line.strip():  # Skip empty lines
+                columns = line.split('\t')
+                rows.append(columns)
+
+        return rows
+    except Exception as e:
+        print(f"Error reading or processing file {file_path}: {e}")
+        return None
+    
+
 def random_guess():
     """
     Assigns a random role and sub-role to an entity.
@@ -40,15 +72,15 @@ def majority_votes(train_file):
     - A tuple containing the most common role and sub-role from the training file
     """
     # Load roles and sub-roles from the training file to find the most common values    
-    with open(train_file, mode='r', encoding='utf-8') as file:
-        tsv_reader = csv.reader(file, delimiter='\t')
-        roles = []
-        sub_roles = []
-        for row in tsv_reader:
-            roles.append(row[4])
-            sub_roles.append(row[5])
-        # Return the most common role and sub-role
-        return Counter(roles).most_common(1)[0][0], Counter(sub_roles).most_common(1)[0][0]
+    rows = process_tsv_file(train_file)
+
+    roles = []
+    sub_roles = []
+    for row in rows:
+        roles.append(row[4])
+        sub_roles.append(row[5])
+    # Return the most common role and sub-role
+    return Counter(roles).most_common(1)[0][0], Counter(sub_roles).most_common(1)[0][0]
 
 def main(dev_file, output_dir, baseline_type, train_file=None):
     """

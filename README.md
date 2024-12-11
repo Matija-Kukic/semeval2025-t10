@@ -4,9 +4,9 @@ Task description
 ## Usage
 
 ### Current best solution(1st subtask)
-[using XLM-Roberta and adding special span tokens]('solutions/subtask1/xlm-roberta-span-tokens.ipynb')
+[using XLM-Roberta and adding special span tokens](solutions/subtask1/xlm-roberta-span-tokens.ipynb)
 
-[using XLM-Roberta adding special span tokens and and extra attention layer]('solutions/subtask1/xlm_roberta_with_added_attention_layer.ipynb')
+[using XLM-Roberta adding special span tokens and and extra attention layer](solutions/subtask1/xlm_roberta_with_added_attention_layer.ipynb)
 
 #### Folder organisation:
 - data/

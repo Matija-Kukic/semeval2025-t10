@@ -1,0 +1,83 @@
+Main role,fine-grained role,description
+Protagonist,Guardian,"Heroes or guardians who protect values or commu-
+nities, ensuring safety and upholding justice. They often take
+on roles such as law enforcement officers, soldiers, or community
+leaders (e.g., climate change advocacy community leaders)"
+Protagonist,Martyr,"Martyrs or saviors who sacrifice their well-being, or
+even their lives, for a greater good or cause. These individuals
+are often celebrated for their selflessness and dedication. This is
+mostly in politics, not in CC."
+Protagonist,Peacemaker,"Individuals who advocate for harmony, working
+tirelessly to resolve conflicts and bring about peace. They of-
+ten engage in diplomacy, negotiations, and mediation. This is
+mostly in politics, not in CC."
+Protagonist,Rebel,"Rebels, revolutionaries, or freedom fighters who
+challenge the status quo and fight for significant change or lib-
+eration from oppression. They are often seen as champions of
+justice and freedom."
+Protagonist,Underdog,"Entities who are considered unlikely to succeed due
+to their disadvantaged position but strive against greater forces
+and obstacles. Their stories often inspire others."
+Protagonist,Virtuous,"Individuals portrayed as virtuous, righteous, or no-
+ble, who are seen as fair, just, and upholding high moral stan-
+dards. They are often role models and figures of integrity."
+Antagonist,Instigator,"Individuals or groups initiating conflict, often seen
+as the primary cause of tension and discord. They may provoke
+violence or unrest."
+Antagonist,Conspirator,"Those involved in plots and secret plans, often
+working behind the scenes to undermine or deceive others. They
+engage in covert activities to achieve their goals."
+Antagonist,Tyrant,"yrants and corrupt officials who abuse their power,
+ruling unjustly and oppressing those under their control. They
+are often characterized by their authoritarian rule and exploita-
+tion."
+Antagonist,Foreign Adversary,"Entities from other nations or regions creating geopo-
+litical tension and acting against the interests of another country.
+They are often depicted as threats to national security."
+Antagonist,Traitor,"Individuals who betray a cause or country, often
+seen as disloyal and treacherous. Their actions are viewed as a
+significant breach of trust. This is mostly in politics."
+Antagonist,Spy,"Spies or double agents accused of espionage, gath-
+ering and transmitting sensitive information to a rival or enemy.
+They operate in secrecy and deception."
+Antagonist,Saboteur,"Saboteurs who deliberately damage or obstruct sys-
+tems, processes, or organizations to cause disruption or failure.
+They aim to weaken or destroy targets from within."
+Antagonist,Corrupt,"Individuals or entities that engage in unethical or
+illegal activities for personal gain, prioritizing profit or power
+over ethics. This includes corrupt politicians, business leaders,
+and officials."
+Antagonist,Incompetent,"Entities causing harm through ignorance, lack of
+skill, or incompetence. This includes people committing foolish
+acts or making poor decisions due to lack of understanding or
+expertise. Their actions, often unintentional, result in significant
+negative consequences."
+Antagonist,Terrorist,"Terrorists, mercenaries, insurgents, fanatics, or ex-
+tremists engaging in violence and terror to further ideological
+ends, often targeting civilians. They are viewed as significant
+threats to peace and security."
+Antagonist,Deceiver,"Deceivers, manipulators, or propagandists who twist
+the truth, spread misinformation, and manipulate public percep-
+tion for their own benefit. They undermine trust and truth."
+Antagonist,Bigot,"Individuals accused of hostility or discrimination
+against specific groups. This includes entities committing acts
+falling under racism, sexism, homophobia, Antisemitism, Islam-
+ophobia, or any kind of hate speech."
+Innocent,Forgotten,"Marginalized or overlooked groups who are often
+ignored by society and do not receive the attention or support
+they need. This includes refugees, who face systemic neglect and
+exclusion."
+Innocent,Exploited,"Individuals or groups used for others’ gain, often
+without their consent and with significant detriment to their well-
+being. They are often victims of labor exploitation, trafficking,
+or economic manipulation."
+Innocent,Victim,"People cast as victims due to circumstances beyond
+their control: victims of physical harm, including natural disasters, acts of war, terrorism,
+mugging, physical assault, victims of economic
+harm, such as sanctions, blockades, and boycotts. Their expe-
+riences evoke sympathy and calls for justice, focusing on either
+physical or economic suffering."
+Innocent,Scapegoat,"Entities blamed unjustly for problems or failures,
+often to divert attention from the real causes or culprits. They
+are made to bear the brunt of criticism and punishment without
+just cause."

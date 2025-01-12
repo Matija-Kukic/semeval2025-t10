@@ -4,9 +4,16 @@ Task description
 ## Usage
 
 ### Current best solution(1st subtask)
+##### Determining the main class - Antagonist/Protagonist/Innocent
+
 [using XLM-Roberta and adding special span tokens](solutions/custom_tokens/xlm-roberta-span-tokens.ipynb)
 
-[using XLM-Roberta adding special span tokens and an extra attention layer](solutions/custom_tokens/xlm_roberta_with_added_attention_layer.ipynb)
+[using XLM-Roberta adding special span tokens - deciding the class from start_span token embedding](solutions/custom_tokens/xlm_roberta_with_classification_on_start_span_token.ipynb)
+
+##### Determining fine-grained roles
+
+[Local classifier per parent node](solutions/hierarchical_classification/LCPN_with_metrics_only_classifier_withoutMLP.ipynb)
+
 
 #### Folder organisation:
 - data/

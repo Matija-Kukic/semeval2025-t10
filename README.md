@@ -12,6 +12,8 @@ Task description
 
 ##### Determining fine-grained roles
 
+[Flat model with hierarhical constraints](solutions/hierarchical_classification/Hierarhical_flat.ipynb)
+
 [Local classifier per parent node](solutions/hierarchical_classification/LCPN_with_metrics_only_classifier_withoutMLP.ipynb)
 
 
